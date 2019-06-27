@@ -1,17 +1,25 @@
 import VideoListEntry from './VideoListEntry';
+import exampleVideoData from '../data/exampleVideoData';
+import App from './App';
 
-export default class VideoList extends Component {
+export default class VideoList extends App {
   constructor(props) {
     super(props);
   }
   render() {
     return (
+    
       <div className="video-list">
-        <div><h5><em>videoListEntry</em> view goes here</h5></div>
-        <div><h5><em>videoListEntry</em> view goes here</h5></div>
-        <div><h5><em>videoListEntry</em> view goes here</h5></div>
-        <div><h5><em>videoListEntry</em> view goes here</h5></div>
-        <div><h5><em>videoListEntry</em> view goes here</h5></div>
+        {
+          exampleVideoData.map(function(element) {
+            return (
+              <VideoListEntry video={element} key={element.id.videoId}/>
+
+              
+            );
+          })
+        }
+       
       </div>
     );
   }

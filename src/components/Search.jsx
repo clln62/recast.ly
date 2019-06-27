@@ -1,4 +1,6 @@
-export default class Search extends Component {
+import App from "./App";
+
+export default class Search extends App {
   constructor(props) {
     super(props);
   }

@@ -1,4 +1,6 @@
-export default class VideoPlayer extends Component {
+import App from "./App";
+
+export default class VideoPlayer extends App {
   constructor(props) {
     super(props);
   }
