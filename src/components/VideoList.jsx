@@ -1,13 +1,13 @@
 
 
-const VideoList = ({videos}) =>
+const VideoList = (props) =>
   (
     
     <div className="video-list ">
      
       {
     
-        videos.map(function(element) {
+        props.videos.map(function(element) {
         
           return (
             <VideoListEntry video={element} key={element.etag}/>

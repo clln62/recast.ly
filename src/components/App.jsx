@@ -4,10 +4,13 @@ export default class App extends React.Component {
     super(props);
     this.state = {
       videos: exampleVideoData,
-      //video: 
+      currentVideo: exampleVideoData[0]
     };
-  }
 
+
+  }
+ 
+  
   render() {
     console.log(exampleVideoData);
     return (
@@ -19,10 +22,10 @@ export default class App extends React.Component {
         </nav>
         <div className="row">
           <div className="col-md-7">
-            <div><h5><em><VideoPlayer/></em> view goes here</h5></div>
+            <div><h5><em><VideoPlayer video={this.state.currentVideo}/></em> view goes here</h5></div>
           </div>
           <div className="col-md-5">
-            <div><h5><em><VideoList/></em> view goes here</h5></div>
+            <div><h5><em><VideoList videos={this.state.videos}/></em> view goes here</h5></div>
           </div>
         </div>
       </div>
