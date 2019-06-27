@@ -1,10 +1,14 @@
 
+
 const VideoList = () =>
   (
     
     <div className="video-list">
+     
       {
+    
         exampleVideoData.map(function(element) {
+        
           return (
             <VideoListEntry video={element} key={element.id.videoId}/>
 
