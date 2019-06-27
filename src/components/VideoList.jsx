@@ -1,16 +1,16 @@
 
 
-const VideoList = () =>
+const VideoList = ({videos}) =>
   (
     
-    <div className="video-list">
+    <div className="video-list ">
      
       {
     
-        exampleVideoData.map(function(element) {
+        videos.map(function(element) {
         
           return (
-            <VideoListEntry video={element} key={element.id.videoId}/>
+            <VideoListEntry video={element} key={element.etag}/>
 
               
           );

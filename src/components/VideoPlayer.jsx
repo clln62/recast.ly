@@ -1,6 +1,6 @@
 
 
-const VideoPlayer = () => 
+const VideoPlayer = ({video}) => 
   (
     <div className="video-player">
       <div className="embed-responsive embed-responsive-16by9">

@@ -1,5 +1,5 @@
 
-const VideoListEntry = () =>
+const VideoListEntry = ({video}) =>
   (
     <div className="video-list-entry media">
       <div className="media-left media-middle">
@@ -22,3 +22,4 @@ VideoListEntry.propTypes = {
 // `var` declarations will only exist globally where explicitly defined
  
 export default VideoListEntry;
+window.VideoListEntry = VideoListEntry;
