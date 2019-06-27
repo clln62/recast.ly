@@ -14,3 +14,5 @@ const Search = () =>
 // `var` declarations will only exist globally where explicitly defined
  
 export default Search;
+
+window.Search = Search;
