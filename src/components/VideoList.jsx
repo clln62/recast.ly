@@ -1,29 +1,21 @@
-import VideoListEntry from './VideoListEntry';
-import exampleVideoData from '../data/exampleVideoData';
-import App from './App';
 
-export default class VideoList extends App {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
+const VideoList = () =>
+  (
     
-      <div className="video-list">
-        {
-          exampleVideoData.map(function(element) {
-            return (
-              <VideoListEntry video={element} key={element.id.videoId}/>
+    <div className="video-list">
+      {
+        exampleVideoData.map(function(element) {
+          return (
+            <VideoListEntry video={element} key={element.id.videoId}/>
 
               
-            );
-          })
-        }
+          );
+        })
+      }
        
-      </div>
-    );
-  }
-}
+    </div>
+  );
+ 
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated
 VideoList.propTypes = {
@@ -32,3 +24,4 @@ VideoList.propTypes = {
 
 // In the ES6 spec, files are "modules" and do not share a top-level scope.
 // `var` declarations will only exist globally where explicitly defined.
+export default VideoList;

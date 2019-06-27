@@ -1,8 +1,5 @@
-import YOUTUBE_API_KEY from './config/youtube';
-import Search from './Search';
-import VideoPlayer from './VideoPlayer';
-import VideoList from './VideoList';
-export default class App extends component {
+
+export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
