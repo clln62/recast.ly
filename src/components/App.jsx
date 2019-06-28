@@ -18,7 +18,6 @@ export default class App extends React.Component {
     });
   }
   render() {
-    console.log(exampleVideoData);
     return (
       <div>
         <nav className="navbar">
