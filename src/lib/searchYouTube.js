@@ -1,32 +1,26 @@
 var searchYouTube = (options, callback) => {
-  var defaults = {
-    query: 'snippet',
-    key: window.YOUTUBE_API_KEY,
-    type: 'video',
-    max: 5,
-    videoEmbeddable: true,
-  };
-
+  // TODO
+  var url = 'https://www.googleapis.com/youtube/v3/search';
   $.ajax({
-    url: 'https://www.googleapis.com/youtube/v3/search',
-    cache: false,
+    url: url,
     type: 'GET',
-    data: _.merge(defaults, options),
-    dataType: 'json',
+    data: {
+      part: 'snippet',
+      q: options.query,
+      maxResults: 5,
+      type: 'video',
+      key: window.YOUTUBE_API_KEY,
+      videoEmbeddable: true,
+    },
     success: function (data) {
+      //console.log(‘successful fetch from server: ’, data);
       callback(data);
     },
     error: function (data) {
-      console.log(data);
+      console.error('failed to send ajax request', data);
     }
   });
-};
-
-
-searchYouTube.propTypes = {
-  key: React.PropTypes.object.isRequired,
-  query: React.PropTypes.object.isRequired
-
+ 
 };
 
 export default searchYouTube;
