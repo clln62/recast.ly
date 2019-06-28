@@ -10,19 +10,44 @@ export default class App extends React.Component {
 
 
   }
+
+  selectVideoPlayer (videoObj) {
+    this.setState({
+      currentVideo: videoObj,
+    });
+  }
+
+
  
   videoClick(video) {
     this.setState({
-      currentVideo: video
-
+      currentVideo: video,
     });
   }
+
+  grabVideos(options) {
+    var {q: queryText} = options;
+    if (queryText !== '') {
+      searchYoutube(options, (queryResponse) => {
+        this.setState({
+          videos: queryResponse.items,
+          currentVideo: queryResponse.item[0],
+        });
+      });
+    } else {
+      this.setState({
+        videos: exampleVideoData,
+        currentVideo: exampleVideoData[0]
+      });
+    }
+  }
+
   render() {
     return (
       <div>
-        <nav className="navbar">
-          <div className="col-md-6 offset-md-3">
-            <div><h5><em><Search/></em> </h5></div>
+        <nav className="navbar" >
+          <div className="col-md-6 offset-md-3" >
+            <div><h5><em><Search navType={_.debounce(this.grabVideos.bind(this), 500)}/></em> </h5></div>
           </div>
         </nav>
         <div className="row">
