@@ -1,6 +1,7 @@
 
 
 const VideoPlayer = (props) => 
+// console.log(props.video.id.videoId)
   (
     props.video ?
 

@@ -6,11 +6,11 @@ var searchYouTube = (options, callback) => {
     type: 'GET',
     data: {
       part: 'snippet',
-      q: options.query,
+      q: options.q,
       maxResults: 5,
       type: 'video',
       key: window.YOUTUBE_API_KEY,
-      videoEmbeddable: true,
+      videoEmbeddable: 'true',
     },
     success: function (data) {
       //console.log(‘successful fetch from server: ’, data);
@@ -23,6 +23,6 @@ var searchYouTube = (options, callback) => {
  
 };
 
-export default searchYouTube;
+// export default searchYouTube;
 
 window.searchYouTube = searchYouTube;

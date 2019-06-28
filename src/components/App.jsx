@@ -11,9 +11,9 @@ export default class App extends React.Component {
 
   }
 
-  componentDidMount() {
-    searchYouTube();
-  }
+  // componentDidMount() {
+  //   searchYouTube();
+  // }
 
   selectVideoPlayer (videoObj) {
     this.setState({
@@ -30,13 +30,12 @@ export default class App extends React.Component {
   }
 
   grabVideos(options) {
-    var {q: queryText} = options;
-    if (queryText !== '') {
-      this.state._searchYouTube(options, queryResponse => {
-        console.log(queryResponse);
+    // var {q: queryText} = options;
+    if (options.q !== '') {
+      window.searchYouTube(options, queryResponse => {
         this.setState({
           videos: queryResponse.items,
-          currentVideo: queryResponse,
+          currentVideo: queryResponse.items[0],
         });
       });
     } else {

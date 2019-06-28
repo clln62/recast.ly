@@ -3,17 +3,17 @@ export default class Search extends React.Component {
     super(props);
   }
 
+  videoSearch (event) {
+    var query = event.target.value;
+    var queryObj = {q: query};
+    this.props.navType(queryObj);
+  }
 
   render () {
-    var videoSearch = function (event) {
-      var query = event.target.value;
-      var queryObj = {q: query};
-      this.props.navType(queryObj);
-    };
 
     return (
       <div className="search-bar form-inline">
-        <input className="form-control" type="text" onKeyUp={videoSearch.bind(this)} />
+        <input className="form-control" type="text" onKeyUp={this.videoSearch.bind(this)} />
         <button className="btn hidden-sm-down">
           <span className="glyphicon glyphicon-search"></span>
         </button>
