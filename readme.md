@@ -2,7 +2,7 @@
 
 Recast.ly is a front end project that allowed the two of us to dive deep into older methods of building an app like AJAX and jQuery. A simple, single-paged app to display videos allows recast.ly to be the stripped down version of YouTube.
 
-<img src="./images/recast.ly.png" height="45%" width="45%"></img>
+<img src="./images/recast.ly.png" height="75%" width="75%"></img>
 
 
 
