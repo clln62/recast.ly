@@ -1,6 +1,6 @@
 # Welcome to recast.ly!
 
-Recast.ly is a front end project that allowed the two of us to dive deep into older methods of building an app like AJAX and jQuery. A simple, single-paged app to display videos allows recast.ly to be the stripped down version of YouTube.
+Recast.ly is a front end project that allowed the two of us to dive deep into older methods of building an app like AJAX and jQuery. A simple, single-paged app to display videos that allows recast.ly to be a stripped down version of YouTube.
 
 <img src="./images/recast.ly.png" height="75%" width="75%"></img>
 
@@ -9,9 +9,9 @@ Recast.ly is a front end project that allowed the two of us to dive deep into ol
 
 ## User Stories
 
-- As a user, I want to watch YouTube videos in the browser.<br/>
-- As a user, I want to search for new videos.<br/>
-- As a user, I want to see recommended videos based on my search.<br/>
+- As a user, I want to watch YouTube videos in the browser.
+- As a user, I want to search for new videos.
+- As a user, I want to see recommended videos based on my search.
 
 
 
@@ -41,13 +41,13 @@ It was interesting for us to take nonconventional was to build a front end app w
 
 ### Challenges
 
-- This was our first experience with an API. We had to learn everything from the beginning to ensure that everything worked properly.<br/>
-- Understanding the ins and outs of AJAX was a struggle for two developers that have utilized newer technologies, but we came out stronger than ever.<br/>
+- This was our first experience with an API. We had to learn everything from the beginning to ensure that everything worked properly.
+- Understanding the ins and outs of AJAX was a struggle for two developers that have utilized newer technologies, but we came out stronger than ever.
 
 ### Learnings
 
-- Trust was a big learning experience for the both of us as we dove deep into the front end to mimic something that was already iconic.<br/>
-- Communication built us up more than we thought it would. We were able to pick up on our strengths and weaknesses to complete the project quickly and efficiently.<br/>
+- Trust was a big learning experience for the both of us as we dove deep into the front end to mimic something that was already iconic.
+- Communication built us up more than we thought it would. We were able to pick up on our strengths and weaknesses to complete the project quickly and efficiently.
 
 
 
