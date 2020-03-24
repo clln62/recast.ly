@@ -11,17 +11,11 @@ export default class App extends React.Component {
 
   }
 
-  // componentDidMount() {
-  //   searchYouTube();
-  // }
-
   selectVideoPlayer (videoObj) {
     this.setState({
       currentVideo: videoObj,
     });
   }
-
-
  
   videoClick(video) {
     this.setState({
@@ -30,7 +24,6 @@ export default class App extends React.Component {
   }
 
   grabVideos(options) {
-    // var {q: queryText} = options;
     if (options.q !== '') {
       window.searchYouTube(options, queryResponse => {
         this.setState({
